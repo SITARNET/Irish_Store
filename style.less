@@ -2,12 +2,36 @@
 @main_color: #a9b089;
 @font_color: #252c26;
 @white_font: #fff;
+@gray: gray;
 
 
 .banner_t {
   color: @white_font;
   margin: 0 auto;
   text-align: center;
+}
+
+.flex_set {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+body {
+  color: @dark_grey;
+}
+
+a {
+  text-decoration: none;
+  color: @dark_grey;
+}
+
+ul {
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .container {
@@ -29,6 +53,7 @@
   .main_banner_title {
     .banner_t;
     font-size: 18px;
+    font-weight: 800;
   }
 
   .main_banner_text {
@@ -39,4 +64,112 @@
 
 .header {
   background-color: @main_color;
+
+  .info_wrapper {
+    .flex_set;
+    margin: 0 20px 0 20px;
+
+    .info_link {
+      display: flex;
+      margin-top: 6px;
+
+      .info-link_icon {
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.info_link_text {
+  a {
+    color: @white_font;
+    font-weight: 800;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.select_wrapper {
+  .select {
+    margin-right: 5px;
+    padding: 6px;
+    color: @white_font;
+    background-color: @main_color;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    & option {
+      background-color: #c6c7c4;
+      color: @dark_grey;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  .contact-icon {
+    padding-right: 8px;
+  }
+}
+
+.main_info_wrapper {
+  position: relative;
+  .flex_set;
+  padding: 40px 20px;
+
+  .logo {
+    img {
+      position: absolute;
+      left: 40%;
+      bottom: -20px;
+      z-index: 5;
+    }
+
+
+  }
+
+  .search_cart {
+    display: flex;
+    margin-left: 5px;
+  }
+}
+
+.navigation {
+  .nav_items {
+    position: relative;
+    li {
+      display: inline-block;
+
+      &:hover {
+        ul {
+          display: block;
+        }
+
+        &:hover {
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      background-color: @gray;
+    }
+  }
+}
+
+.content_wrapper {
+  background: url(img/bg_baner_1.jpg) no-repeat  center;
+ // background-origin: border-box;
+ // -webkit-background-size: contain;
+ // background-size: contain;
+  height: 450px;
+  width: 100%;
 }
