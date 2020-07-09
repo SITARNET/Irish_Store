@@ -60,6 +60,10 @@ ul li {
   text-align: center;
   font-size: 13px;
 }
+.cart img {
+  width: 30px;
+  height: 30px;
+}
 .header {
   background-color: #a9b089;
 }
@@ -113,9 +117,18 @@ ul li {
   bottom: -20px;
   z-index: 5;
 }
+.main_info_wrapper .search_panel input {
+  background-image: url("img/search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
 .main_info_wrapper .search_cart {
   display: flex;
   margin-left: 5px;
+}
+.cart {
+  margin-left: 10px;
 }
 .navigation {
   height: 50px;
@@ -412,5 +425,118 @@ ul li {
 }
 .slider .slider-item_info:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.video-content {
+  display: flex;
+  justify-content: space-around;
+}
+.video-content .video iframe {
+  border: 8px solid #a9b089;
+}
+.video_description {
+  max-width: 560px;
+}
+.video_description .description_title {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0;
+}
+.video_description .description_text {
+  font-size: 16px;
+  text-align: center;
+}
+.video_description .video_btn {
+  border: 1px solid #2d2b31;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.video_description .video_btn:hover {
+  border-color: #ccc;
+}
+.video_description .video_btn:hover a {
+  color: #ccc;
+}
+.discount {
+  background-image: url("img/bg_banner_3.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  height: 437px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.discount_content {
+  background-color: #fff;
+  max-width: 350px;
+  height: 230px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.discount_content {
+  margin-top: 30px;
+}
+.discount_title {
+  font-size: 44px;
+  color: #9a1a28;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
+.discount_sub_title {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.discount_text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.discount_text span {
+  font-weight: 800;
+}
+.discount_btn {
+  background-color: #22505f;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.discount_btn a {
+  color: #fff;
+}
+.mention {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.mention_title {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin-top: 25px;
+}
+.mention_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.our_journey {
+  background-image: url("img/bg_banner_4.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
