@@ -6,6 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +21,9 @@
     <div class="top_container">
         <div class="main_banner">
             <div class="main_banner_title">INDEPENDENCE DAY SALE</div>
-            <div class="main_banner_text">25% Off everything - use code 4JULY + Free GIft on orders over $69</div>
+            <div class="main_banner_text">25% Off everything - use code <span>4JULY</span> + Free GIft on orders over
+                $69
+            </div>
         </div>
     </div>
     <div class="header">
@@ -30,17 +39,17 @@
 
             <div class="select_wrapper">
                 <select class="select">
-                    <option class="select_list" value = "my account">MY ACCOUNT</option>
-                    <option class="select_list" value = "my wish list">MY WISH LIST</option>
-                    <option class="select_list" value = "sign in">SIGN IN</option>
+                    <option class="select_list" value="my account">MY ACCOUNT</option>
+                    <option class="select_list" value="my wish list">MY WISH LIST</option>
+                    <option class="select_list" value="sign in">SIGN IN</option>
                 </select>
 
                 <select class="select">
-                    <option class="select_list" value = "aud">AUD (A$)</option>
-                    <option class="select_list" value = "gbp">GBP (&pound;)</option>
-                    <option class="select_list" value = "cad">CAD (CA$)</option>
-                    <option class="select_list" value = "nzd">NZD (NZ$)</option>
-                    <option class="select_list" value = "usd">USD ($)</option>
+                    <option class="select_list" value="aud">AUD (A$)</option>
+                    <option class="select_list" value="gbp">GBP (&pound;)</option>
+                    <option class="select_list" value="cad">CAD (CA$)</option>
+                    <option class="select_list" value="nzd">NZD (NZ$)</option>
+                    <option class="select_list" value="usd">USD ($)</option>
                 </select>
             </div>
         </div>
@@ -62,6 +71,7 @@
                             INT +353 1 861 1590
                         </a>
                     </span>
+
                 </div>
             </div>
             <div class="logo">
@@ -73,11 +83,14 @@
             </div>
             <div class="search_cart">
                 <div class="search_panel">
-                    <input id="search" placeholder="SEARCH" type="text">
+                    <input id="search" value="search" type="text">
+                    <a class="search" href="#">
+                        <i class="fa fa-search" area-hidden="true"></i>
+                    </a>
                 </div>
                 <div class="cart">
                     <a href="#">
-                        <img src="#" alt="cart_img">
+                        <img src="img/cart.png" alt="cart_img">
                     </a>
                 </div>
             </div>
@@ -154,7 +167,7 @@
             </li>
             <li class="nav_item">
                 <a href="#">Jewelry</a>
-                <ul class = "second_level">
+                <ul class="second_level">
                     <span class="title">Department</span>
                     <li class="drop_down_menu">
                         <a href="#">Items 1</a>
@@ -193,7 +206,7 @@
                         <a href="#">Items 11</a>
                     </li>
                 </ul>
-                <ul class = "second_level">
+                <ul class="second_level">
                     <span class="title">Style</span>
                     <li class="drop_down_menu">
                         <a href="#">Items 1</a>
@@ -315,7 +328,7 @@
             <div class="title_1">Independence day sale</div>
             <div class="title_2">25% off</div>
             <div class="title_3">everything + free gift</div>
-            <div class="title_4">On all orders over $69 | Use code <span class = "sale">4july</span> </div>
+            <div class="title_4">On all orders over $69 | Use code <span class="sale">4july</span></div>
         </div>
         <div class="shop_btn">
             <a class="btn" href="#">Shop woman</a>
@@ -365,45 +378,45 @@
             </div>
         </div>
     </div>
-        <div class="shop_categories">
-            <div class="categories_wrapp">
-                <a href="#">
-                    <div class="categorie_bg">
-                        <img src="img/women.jpg" alt="women"/>
-                    </div>
-                    <div class="categorie_btn">
-                        <a class="btn" href="#">Shop woman</a>
-                    </div>
-                </a>
-            </div>
-            <div class="categories_wrapp">
-                <a href="#">
-                    <div class="categorie_bg">
-                        <img src="img/blanket.jpg" alt="blanket"/>
-                    </div>
-                    <div class="categorie_btn">
-                        <a class="btn" href="#">Shop Irish gifts</a>
-                    </div>
-                </a>
-            </div>
-            <div class="categories_wrapp">
-                <a href="#">
-                    <div class="categorie_bg">
-                        <img src="img/men.jpg" alt="men"/>
-                    </div>
-                    <div class="categorie_btn">
-                        <a class="btn" href="#">Shop woman</a>
-                    </div>
-                </a>
-            </div>
+    <div class="shop_categories">
+        <div class="categories_wrapp">
+            <a href="#">
+                <div class="categorie_bg">
+                    <img src="img/women.jpg" alt="women"/>
+                </div>
+                <div class="categorie_btn">
+                    <a class="btn" href="#">Shop woman</a>
+                </div>
+            </a>
         </div>
+        <div class="categories_wrapp">
+            <a href="#">
+                <div class="categorie_bg">
+                    <img src="img/blanket.jpg" alt="blanket"/>
+                </div>
+                <div class="categorie_btn">
+                    <a class="btn" href="#">Shop Irish gifts</a>
+                </div>
+            </a>
+        </div>
+        <div class="categories_wrapp">
+            <a href="#">
+                <div class="categorie_bg">
+                    <img src="img/men.jpg" alt="men"/>
+                </div>
+                <div class="categorie_btn">
+                    <a class="btn" href="#">Shop woman</a>
+                </div>
+            </a>
+        </div>
+    </div>
 
 </div>
 
 <div class="container">
     <div class="container_ship">
-			<div class = "shipping_price">$9.95 SHIPPING FOR 1ST ITEM - ALL OTHER ITEMS SHIP FREE</div>
-			<div class = "deliver_info">DELIVERED FROM IRELAND TO THE USA WITHIN 3-7 DAYS</div>
+        <div class="shipping_price">$9.95 SHIPPING FOR 1ST ITEM - ALL OTHER ITEMS SHIP FREE</div>
+        <div class="deliver_info">DELIVERED FROM IRELAND TO THE USA WITHIN 3-7 DAYS</div>
     </div>
 </div>
 
@@ -423,7 +436,7 @@
         </div>
     </div>
 
-    <div class = "shop_categories_2">
+    <div class="shop_categories_2">
         <div class="shop_categories_2_card">
             <a href="#">
                 <img src="img/jeweler.jpg" alt="jeweler">
@@ -463,7 +476,7 @@
                     </div>
                     <div class="slidre-item_price">
                         Was <span class="old_price"> $149.95</span>
-                        Now  <span class="current_price"> $99.95</span>
+                        Now <span class="current_price"> $99.95</span>
                     </div>
                 </div>
             </a>
@@ -605,9 +618,16 @@
 <div class="container">
     <div class="video-content">
         <div class="video">
-            <iframe width="590" height="315" src="https://www.youtube.com/embed/rMtA10i-yIU" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <a href="https://www.youtube.com/embed/rMtA10i-yIU" class="popup fancybox">
+                <img class="video_bg" src="img/video_1.png" alt="video">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </a>
+
+
+            <!--            <iframe width="590" height="315" src="https://www.youtube.com/embed/rMtA10i-yIU" frameborder="0"-->
+            <!--                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+            <!--                    allowfullscreen></iframe>-->
+
             <div class="video_description">
                 <div class="description_title">
                     Traditional Irish Aran Sweaters
@@ -622,9 +642,15 @@
             </div>
         </div>
         <div class="video">
-            <iframe width="590" height="315" src="https://www.youtube.com/embed/BBBfVZsqhrw"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                     picture-in-picture" allowfullscreen></iframe>
+            <a href="https://www.youtube.com/embed/rMtA10i-yIU" class="popup fancybox">
+                <img class="video_bg" src="img/video_2.png" alt="video">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </a>
+
+
+            <!--            <iframe width="590" height="315" src="https://www.youtube.com/embed/BBBfVZsqhrw"-->
+            <!--                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;-->
+            <!--                     picture-in-picture" allowfullscreen></iframe>-->
             <div class="video_description">
                 <div class="description_title">
                     Authentic Irish gifts
@@ -656,7 +682,7 @@
                 first order too.
             </div>
             <div class="discount_btn">
-                <a href="#">get offer</a>
+                <a class="btn" href="#">get offer</a>
             </div>
         </div>
     </div>
@@ -675,77 +701,87 @@
 
 <div class="container">
     <div class="our_journey">
+        <div class="logo"><a href="#">
+            <img src="img/logo.svg" alt="Logo">
+        </a></div>
         <div class="our_journey_title"> The Irish Store Journey</div>
         <div class="our_journey_btn">
-            <a href="#">See our journey</a>
+            <a class="btn" href="#">See our journey</a>
         </div>
     </div>
 </div>
-<footer class = "container">`
-    <div class="email"></div>
-    <div class="footer_menu">
-        <div class="footer_menu_block">
-            <div class="footer_menu_title">How can wee help</div>
-            <ul>
-                <li class="menu_item"><a href="#">Help Center</a></li>
-                <li class="menu_item"><a href="#">Order Tracking</a></li>
-                <li class="menu_item"><a href="#">Contact Us</a></li>
-                <li class="menu_item"><a href="#">Free Returns</a></li>
-                <li class="menu_item"><a href="#">Delivery Shipping</a></li>
-                <li class="menu_item"><a href="#">Tax Inform</a></li>
-                <li class="menu_item"><a href="#">COVID-19</a></li>
-            </ul>
-        </div>
 
-        <div class="footer_menu_block">
-            <div class="footer_menu_title">About us</div>
-            <ul>
-                <li class="menu_item"><a href="#">Our Story</a></li>
-                <li class="menu_item"><a href="#">Security Privacy Policy</a></li>
-                <li class="menu_item"><a href="#">Sitemap</a></li>
-                <li class="menu_item"><a href="#">Terms & Conditions</a></li>
-            </ul>
+<footer class="container">`
+    <div class="footer_information">
+        <div class="email">
+            <input class="email_input" type="email" value="enter email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input class="email_submit" type="submit" value="subscribe">
         </div>
+        <div class="footer_menu">
+            <div class="footer_menu_block">
+                <div class="footer_menu_title">How can wee help</div>
+                <ul>
+                    <li class="menu_item"><a href="#">Help Center</a></li>
+                    <li class="menu_item"><a href="#">Order Tracking</a></li>
+                    <li class="menu_item"><a href="#">Contact Us</a></li>
+                    <li class="menu_item"><a href="#">Free Returns</a></li>
+                    <li class="menu_item"><a href="#">Delivery Shipping</a></li>
+                    <li class="menu_item"><a href="#">Tax Inform</a></li>
+                    <li class="menu_item"><a href="#">COVID-19</a></li>
+                </ul>
+            </div>
 
-        <div class="footer_menu_block">
-            <div class="footer_menu_title">Userful information</div>
-            <ul>
-                <li class="menu_item"><a href="#">Size Charts</a></li>
-                <li class="menu_item"><a href="#">Blog</a></li>
-                <li class="menu_item"><a href="#">Catalog</a></li>
-            </ul>
-        </div>
-        <div class="footer_menu_block">
-            <div class="footer_menu_title">Popular products</div>
-            <ul>
-                <li class="menu_item"><a href="#">Aran Sweaters</a></li>
-                <li class="menu_item"><a href="#">Tree of Life</a></li>
-                <li class="menu_item"><a href="#">Celtic Knot Jewelery</a></li>
-                <li class="menu_item"><a href="#">Irish Blessings</a></li>
-                <li class="menu_item"><a href="#">Claddagh Rings</a></li>
-                <li class="menu_item"><a href="#">Men's Claddagh Rings</a></li>
-                <li class="menu_item"><a href="#">Trinity Knot Rings</a></li>
-            </ul>
-        </div>
-        <div class="footer_menu_block">
-            <div class="social">
-                <div class="social_item"><a href="#"><img src="img/facebook.svg" alt="social"></a></div>
-                <div class="social_item"><a href="#"><img src="img/pinterest.svg" alt="social"></a></div>
-                <div class="social_item"><a href="#"><img src="img/linkedin.svg" alt="social"></a></div>
-                <div class="social_item"><a href="#"><img src="img/youtube.svg" alt="social"></a></div>
-                <div class="social_item"><a href="#"><img src="img/instagram.svg" alt="social"></a></div>
-                <div class="social_item"><a href="#"><img src="img/blog.svg" alt="social"></a></div>
+            <div class="footer_menu_block">
+                <div class="footer_menu_title">About us</div>
+                <ul>
+                    <li class="menu_item"><a href="#">Our Story</a></li>
+                    <li class="menu_item"><a href="#">Security Privacy Policy</a></li>
+                    <li class="menu_item"><a href="#">Sitemap</a></li>
+                    <li class="menu_item"><a href="#">Terms & Conditions</a></li>
+                </ul>
             </div>
-            <div class="footer_menu_text">
-                To stay up date with our special offers and greate products
+
+            <div class="footer_menu_block">
+                <div class="footer_menu_title">Userful information</div>
+                <ul>
+                    <li class="menu_item"><a href="#">Size Charts</a></li>
+                    <li class="menu_item"><a href="#">Blog</a></li>
+                    <li class="menu_item"><a href="#">Catalog</a></li>
+                </ul>
             </div>
-            <div class="footer_feefo">
-                <div class="percent_feefo">
-                    <span>98%</span>
-                    <img src="img/feefo.png" alt="feefo">
+            <div class="footer_menu_block">
+                <div class="footer_menu_title">Popular products</div>
+                <ul>
+                    <li class="menu_item"><a href="#">Aran Sweaters</a></li>
+                    <li class="menu_item"><a href="#">Tree of Life</a></li>
+                    <li class="menu_item"><a href="#">Celtic Knot Jewelery</a></li>
+                    <li class="menu_item"><a href="#">Irish Blessings</a></li>
+                    <li class="menu_item"><a href="#">Claddagh Rings</a></li>
+                    <li class="menu_item"><a href="#">Men's Claddagh Rings</a></li>
+                    <li class="menu_item"><a href="#">Trinity Knot Rings</a></li>
+                </ul>
+            </div>
+            <div class="footer_menu_block social_info">
+                <div class="social">
+                    <div class="social_item"><a href="#"><img src="img/facebook.svg" alt="social"></a></div>
+                    <div class="social_item"><a href="#"><img src="img/pinterest.svg" alt="social"></a></div>
+                    <div class="social_item"><a href="#"><img src="img/linkedin.svg" alt="social"></a></div>
+                    <div class="social_item"><a href="#"><img src="img/youtube.svg" alt="social"></a></div>
+                    <div class="social_item"><a href="#"><img src="img/instagram.svg" alt="social"></a></div>
+                    <div class="social_item"><a href="#"><img src="img/blog.svg" alt="social"></a></div>
                 </div>
-                <div class="feefo_title">
-                    customer satisfaction
+                <div class="footer_menu_text">
+                    <span>To stay up date with our special offers and greate products</span>
+                </div>
+                <div class="footer_feefo">
+                    <div class="percent_feefo">
+                        <span>98%</span>
+                        <img src="img/feefo.png" alt="feefo">
+                    </div>
+                    <div class="feefo_title">
+                        customer satisfaction
+                    </div>
                 </div>
             </div>
         </div>
@@ -755,34 +791,37 @@
         <div class="location_item">
             <div class="location_item_header">
                 The irish store
-                <div class="address">
-                    Suite 6.
-                    7 Upper O'Connell Street,
-                    Dublin 1, ireland
-                </div>
             </div>
+            <div class="location_item_address">
+                Suite 6. <br>
+                7 Upper O'Connell Street, <br>
+                Dublin 1, ireland
+            </div>
+
         </div>
+
         <div class="location_item">
             <span>usa/canada:</span> <a href="tel:18007075037">1800 707 5037 (toll free to
-            Ireland)</a>
-            <span>International</span> <a href="tel:+35318611590">+353 1 8611590</a>
-            <span>Contact us</span> <a href="mailto:info@theirishstore.com">info@theirishstore.com</a>
+            Ireland)</a> <br>
+            <span>International:</span> <a href="tel:+35318611590">+353 1 8611590</a> <br>
+            <span>Contact us:</span> <a href="mailto:info@theirishstore.com">info@theirishstore.com</a>
         </div>
-        <div class="location_item">
+
+        <div class="location_item security_block">
             <div class="security">
-               <span>100% secure shopping cart</span> <img src="img/comodo-secure.png" alt="comodo"> 
+                <div class="security_text">
+                    <span>100% secure shopping cart</span>
+                </div>
+                <div class="security_img">
+                    <img class="comodo" src="img/comodo-secure.png" alt="comodo">
+                </div>
             </div>
             <div class="pay_systems">
-                <img src="img/payment-providers-2.webp" alt="pay">
+                <img class="pay_sys" src="img/payment-providers-2.webp" alt="pay">
             </div>
         </div>
     </div>
 
 </footer>
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>
