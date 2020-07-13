@@ -37,6 +37,19 @@
   padding: 15px;
 }
 
+.button_(@tcol,@fw, @mtb, @mlr, @bgc, @size, @type, @color) {
+  margin: @mtb @mlr;
+  .btn {
+    text-transform: uppercase;
+    font-weight: @fw;
+    color:@tcol;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: @bgc;
+    border: @size @type @color;
+  }
+}
+//***************************************************
 @font-face {
   font-family: "Roboto_Bold";
   src: url("fonts/Roboto-Bold.eot") ;
@@ -225,51 +238,61 @@ ul {
 
 .navigation {
   height: 50px;
-  width: 61%;
+  width: 65%;
   margin: 0 auto;
-
-  .nav_items {
-    position: relative;
-
-    .nav_item {
-      display: inline-block;
-      padding: 18px;
-    }
-  }
 }
+.nav {
+  position: relative;
+  .flex(center,0,0);
+  padding-top: 20px;
+  height: 100%;
 
-.nav_items {
-  ul {
-    display: none;
-    position: absolute;
-    background-color: @gray;
-  }
-}
+  &_item {
+    margin-right: 3%;
+    text-transform: uppercase;
+    .fw700;
 
-.navigation {
-  .nav_item {
     &:hover {
-      text-decoration: underline;
-
-      ul {
-        display: block;
-        width: 200px;
-
-        span {
-          text-decoration: underline;
-        }
-
-        li {
-          padding: 10px 20px;
-        }
+      border-bottom: 3px solid @dark_grey;
+    }
+    &:hover {
+      .sub_menu {
+        position: absolute;
+        top: 50px;
+        .flex(0,0,0);
       }
     }
   }
+
+  .sub_menu {
+    display: none;
+  }
+  .drop_down_menu {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.second_level {
-
+.sub_menu {
+  background-color: @light_gray;
+  &_item {
+    .title {
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
 }
+
+.nav_item {
+  div {
+    padding: 20px;
+    li {
+      padding: 20px 0 5px 0;
+    }
+  }
+}
+
 
 .content_wrapper {
   background: url(img/bg_baner_1.jpg) no-repeat center;
@@ -312,10 +335,11 @@ ul {
 }
 
 .shop_btn {
-  .btn {
-    background-color: @white;
-    .btn_set;
-  }
+  .button_(@dark_grey,400,0,auto,@white,0,0,0);
+  //.btn {
+  //  background-color: @white;
+  //  .btn_set;
+  //}
 }
 
 .msg_banner {
@@ -373,15 +397,16 @@ ul {
 
   .categorie_btn {
     .btn {
-      color: @white;
-      background-color: rgba(0, 0, 0, .5);
-      border: 1px solid @white;
-      position: absolute;
-      bottom: 20px;
-      right: 115px;
-      .btn_set;
-      .fw700;
+    //  color: @white;
+    //  background-color: rgba(0, 0, 0, .5);
+    //  border: 1px solid @white;
+    position: absolute;
+    bottom: 40px;
+    right: 115px;
+    //  .btn_set;
+    //.fw700;
     }
+    .button_(@white,700,0,0,rgba(0,0,0,.5),1px,solid,@white);
   }
 }
 
@@ -421,6 +446,7 @@ ul {
   .exclusive_block_content {
     color: @white;
     width: 20%;
+    height: 70%;
 
     .exclusive_block_title {
       font-size: 30px;
@@ -435,20 +461,22 @@ ul {
     }
 
     .exclusive_block_btn {
-      text-align: center;
-      margin-top: 25px;
+      //text-align: center;
+      //margin-top: 25px;
 
-      .btn {
-        .btn_set;
-        background-color: @white;
-      }
+      //.btn {
+      //  .btn_set;
+      //  background-color: @white;
+      //}
+      .button_(@dark_grey,700,10px,15px, @white,0,0,0)
     }
   }
 }
 
 .exclusive_block_content {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 65%;
+  .flex(space-around,column,center);
 }
 
 .shop_categories_2 {
@@ -474,14 +502,15 @@ ul {
 
 .card_btn {
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 40px;
-
-  a {
-    .btn_set;
-    background-color: @white;
-    border: 1px solid @dark_grey;
-  }
+  //margin-top: 35px;
+  //margin-bottom: 40px;
+  //
+  //a {
+  //  .btn_set;
+  //  background-color: @white;
+  //  border: 1px solid @dark_grey;
+  //}
+  .button_(@dark_grey,700,40px,auto,transperent,1px,solid,@dark_grey)
 }
 
 .header_container_title {
@@ -647,13 +676,11 @@ ul {
     height: 80px;
     border-radius: 50%;
     text-align: center;
-
   }
 }
 
-
 .video_description {
-  max-width: 560px;
+  max-width: 595px;
 
   .description_title {
     font-size: 22px;
@@ -663,7 +690,7 @@ ul {
   }
 
   .description_text {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -671,8 +698,7 @@ ul {
     border: 1px solid @dark_grey;
     width: 30%;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 20px auto;
     .btn_set;
 
     &:hover {

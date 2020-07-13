@@ -167,33 +167,52 @@ ul li {
 }
 .navigation {
   height: 50px;
-  width: 61%;
+  width: 65%;
   margin: 0 auto;
 }
-.navigation .nav_items {
+.nav {
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: 0;
+  align-items: 0;
+  padding-top: 20px;
+  height: 100%;
 }
-.navigation .nav_items .nav_item {
-  display: inline-block;
-  padding: 18px;
+.nav_item {
+  margin-right: 3%;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.nav_items ul {
-  display: none;
+.nav_item:hover {
+  border-bottom: 3px solid #2d2b31;
+}
+.nav_item:hover .sub_menu {
   position: absolute;
-  background-color: #c9c9c9;
+  top: 50px;
+  display: flex;
+  justify-content: 0;
+  flex-direction: 0;
+  align-items: 0;
 }
-.navigation .nav_item:hover {
+.nav .sub_menu {
+  display: none;
+}
+.nav .drop_down_menu:hover {
   text-decoration: underline;
 }
-.navigation .nav_item:hover ul {
-  display: block;
-  width: 200px;
+.sub_menu {
+  background-color: #c6c7c4;
 }
-.navigation .nav_item:hover ul span {
+.sub_menu_item .title {
+  text-align: center;
   text-decoration: underline;
 }
-.navigation .nav_item:hover ul li {
-  padding: 10px 20px;
+.nav_item div {
+  padding: 20px;
+}
+.nav_item div li {
+  padding: 20px 0 5px 0;
 }
 .content_wrapper {
   background: url(img/bg_baner_1.jpg) no-repeat center;
@@ -240,10 +259,17 @@ ul li {
   font-size: 0;
   font-weight: 700;
 }
+.shop_btn {
+  margin: 0 auto;
+}
 .shop_btn .btn {
-  background-color: #fff;
   text-transform: uppercase;
-  padding: 15px;
+  font-weight: 400;
+  color: #2d2b31;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 0 0 0;
 }
 .msg_banner {
   height: 40px;
@@ -293,16 +319,22 @@ ul li {
 .categories_wrapp img {
   width: 100%;
 }
+.categories_wrapp .categorie_btn {
+  margin: 0 0;
+}
 .categories_wrapp .categorie_btn .btn {
+  position: absolute;
+  bottom: 40px;
+  right: 115px;
+}
+.categories_wrapp .categorie_btn .btn {
+  text-transform: uppercase;
+  font-weight: 700;
   color: #fff;
+  padding: 10px 20px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
-  position: absolute;
-  bottom: 20px;
-  right: 115px;
-  text-transform: uppercase;
-  padding: 15px;
-  font-weight: 700;
 }
 .container_ship {
   width: 100%;
@@ -337,6 +369,7 @@ ul li {
 .exclusive_block_wrapper .exclusive_block_content {
   color: #fff;
   width: 20%;
+  height: 70%;
 }
 .exclusive_block_wrapper .exclusive_block_content .exclusive_block_title {
   font-size: 30px;
@@ -349,17 +382,24 @@ ul li {
   text-align: center;
 }
 .exclusive_block_wrapper .exclusive_block_content .exclusive_block_btn {
-  text-align: center;
-  margin-top: 25px;
+  margin: 10px 15px;
 }
 .exclusive_block_wrapper .exclusive_block_content .exclusive_block_btn .btn {
   text-transform: uppercase;
-  padding: 15px;
+  font-weight: 700;
+  color: #2d2b31;
+  padding: 10px 20px;
+  text-align: center;
   background-color: #fff;
+  border: 0 0 0;
 }
 .exclusive_block_content {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 65%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 .shop_categories_2 {
   margin-top: 20px;
@@ -381,13 +421,15 @@ ul li {
 }
 .card_btn {
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
-.card_btn a {
+.card_btn .btn {
   text-transform: uppercase;
-  padding: 15px;
-  background-color: #fff;
+  font-weight: 700;
+  color: #2d2b31;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: transperent;
   border: 1px solid #2d2b31;
 }
 .header_container_title {
@@ -507,7 +549,7 @@ ul li {
   text-align: center;
 }
 .video_description {
-  max-width: 560px;
+  max-width: 595px;
 }
 .video_description .description_title {
   font-size: 22px;
@@ -516,15 +558,14 @@ ul li {
   margin: 10px 0;
 }
 .video_description .description_text {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
 }
 .video_description .video_btn {
   border: 1px solid #2d2b31;
   width: 30%;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 20px auto;
   text-transform: uppercase;
   padding: 15px;
 }
